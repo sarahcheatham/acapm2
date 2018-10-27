@@ -9,6 +9,7 @@ const rl = readline.createInterface({
 //checks if 2nd argument is 'init'
 process.argv[2] === 'init'
 
+//questions have to be nested to be asked in sync
   rl.question('App name?', (name)=>{
     rl.question('Description?', (desc)=>{
       rl.question('Version?', (version)=>{
